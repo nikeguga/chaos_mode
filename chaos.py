@@ -20,7 +20,7 @@ def logistic_map_thread(entropy_pool, queue, steps=1000):
     x = random.random()
 
     for step in range(steps):
-        x = r * x * (1 - x)git 
+        x = r * x * (1 - x)
         # Собираем микросекундные задержки, чтобы усилить эффект непредсказуемости
         time.sleep(random.random() / 10000.0)
 
